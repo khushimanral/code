@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class RemoveWhitespaces {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+
+        String result = removeWhitespaces(inputString);
+        System.out.println("String after removing whitespaces: " + result);
+    }
+
+    public static String removeWhitespaces(String str) {
+  
+        return str.replaceAll("\\s", "");
+    }
+}
