@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class RemoveNonAlphabetic {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+
+        String result = removeNonAlphabetic(inputString);
+        System.out.println("String after removing non-alphabetic characters: " + result);
+    }
+
+    public static String removeNonAlphabetic(String str) {
+
+        return str.replaceAll("[^a-zA-Z]", "");
+    }
+}
